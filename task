@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Social Media Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>ConnectHub</h1>
+</header>
+
+
+<div class="container">
+
+    <!-- User Profile -->
+    <div class="profile">
+        <img src="https://via.placeholder.com/100">
+
+        <h2>Ilakkiya</h2>
+        <p>Computer Science Student</p>
+
+        <button onclick="follow()">Follow</button>
+
+        <p id="followers">Followers: 100</p>
+
+    </div>
+
+
+
+    <!-- Create Post -->
+    <div class="create-post">
+
+        <h2>Create Post</h2>
+
+        <textarea id="postText" 
+        placeholder="What's on your mind?"></textarea>
+
+        <button onclick="addPost()">
+            Post
+        </button>
+
+    </div>
+
+
+
+    <!-- Posts Section -->
+
+    <div id="posts">
+
+
+        <div class="post">
+
+            <h3>Ilakkiya</h3>
+
+            <p>
+            Learning Full Stack Development 🚀
+            </p>
+
+
+            <button onclick="likePost(this)">
+            ❤️ Like
+            </button>
+
+
+            <span>
+            Likes: 0
+            </span>
+
+
+            <h4>Comments</h4>
+
+
+            <input type="text" 
+            placeholder="Write a comment">
+
+
+            <button>
+            Comment
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
